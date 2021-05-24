@@ -1,0 +1,44 @@
+<template name="matchTable">
+  <!-- <div class="panel panel-primary"> -->
+      <!--<div class="panel-heading">Jogo {{nJogo}} - {{centro}} - Chave {{grupo}}</div> -->
+      <div class="panel-body">
+        
+        <div class="row">
+          <div class="col-xs-1">
+              <h4 class="text-center"><span class="label label-default">{{horario}}</span></h4>
+          </div>
+          
+          <div class="col-xs-4 text-center">
+            <div class="row">
+              <div class="panel panel-default"> <div class="panel-body"> <h3 class="text-left">{{timeA}}</h3> </div> </div>
+            </div>
+            <div class="row">
+              <span class="text-muted">{{jogadoresGolsA}}</span>
+            </div>
+            
+          </div>
+          
+          <div class="col-xs-2">
+              <h2 class="text-center">{{golsA}} <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {{golsB}}</h2>
+            <!--  <h2 class="text-center"> vs </h2> -->
+          </div>
+          
+          <div class="col-xs-4 text-center">
+            <div class="row">
+              <div class="panel panel-default"> <div class="panel-body"> <h3 class="text-left">{{timeB}}</h3> </div> </div>
+            </div>
+            <div class="row">
+              <span class="text-muted">{{jogadoresGolsB}}</span>
+            </div>
+            
+          </div>
+          
+           <div class="col-xs-1">
+             <h2 class="text-center"></h2>
+          </div>
+          
+        </div>
+        
+      </div>
+  <!-- </div> -->
+</template>

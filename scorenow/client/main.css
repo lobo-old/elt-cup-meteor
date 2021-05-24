@@ -1,0 +1,14 @@
+/* CSS declarations go here */
+
+
+body {
+  padding-bottom: 100px;
+}
+
+
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

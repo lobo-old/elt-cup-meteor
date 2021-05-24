@@ -1,0 +1,16 @@
+<template name="lineTableClassification">
+    <tr>
+      <td><img src="{{#if urlEscudo}} {{urlEscudo}} {{else}} escudodefault.png  {{/if}}" width="50" height="50" class="center-block" alt="{{equipe}}"></td>
+      <td> {{equipe}}</td> 
+      <td> {{jogos}}</td>
+      <td>{{pontosG}}</td>
+      <td> {{vitorias}}</td>
+      <td> {{empates}}</td>
+      <td> {{derrotas}}</td>
+      <td>{{golsM}}</td>
+      <td>{{golsC}}</td>
+      <td>{{saldoG}}</td>
+      <td>{{cartoesA}}</td>
+      <td>{{cartoesV}}</td>
+    </tr>
+</template>

@@ -1,0 +1,26 @@
+<template name="groupTable"> 
+    <div class="table-responsive">
+            <h1>Chave {{grupo}}</h1>
+            <table name="tabela-grupo{{grupo}}" class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Equipe</th> 
+                  <th>Pontos ganhos</th>
+                  <th>Saldo de gols</th>
+                  <th>Gols marcados </th>
+                  <th>Cartões amarelos</th>
+                  <th>Cartões vermelhos</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <td> {{equipe}}</td> 
+                  <!--{{#each teams}}
+                      {{>lineTable}}
+                  {{/each}} -->
+              </tbody>
+            </table>
+            
+          </div>
+   
+</template>

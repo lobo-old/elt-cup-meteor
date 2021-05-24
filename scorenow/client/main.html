@@ -1,0 +1,1230 @@
+<head>
+  <title>V Copa Luve de Futsal</title>
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    
+    <!-- Banner da competição -->
+    <div class="row">
+          <div class="col-md-12 ">
+            <img src="b01.png" width="100%" height="100%" class="img-responsive center-block" alt="Copa Luve">  
+          </div>
+    </div>
+    <!-- Título da competição -->
+    <!--
+    <div class="jumbotron text-center">
+      <h1>V Copa Luve de Futsal</h1>
+    </div>
+    -->
+     
+    
+    
+ 
+    <!-- Carousel superior -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="bannerScore.png" width="100%" height="100%" class="img-responsive center-block" alt="First slide">
+          <div class="carousel-caption">
+            <!--<h2>Heading</h2> -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="bannerScore3.png" width="100%" height="100%" class="img-responsive center-block" alt="Second slide">
+          <div class="carousel-caption">
+            <!-- <h2>Heading</h2> -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="bannerScore.png" width="100%" height="100%" class="img-responsive center-block" alt="First slide">
+          <div class="carousel-caption">
+            <!--<h2>Heading</h2> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <!-- Carousel END -->
+    
+    
+    <!-- TABS buttons dos centros -->
+    
+    <div class="row">
+      <div class="col-md-12 center-block">
+        <ul class="nav nav-pills nav-justified" role="tablist">
+          
+              <li role="presentation" class="active"><a href="#tab-CCA" aria-controls="tab-CCA" role="tab" data-toggle="tab"><h1>CCA</h1> </a></li>
+              <li role="presentation" class><a href="#tab-CCB" aria-controls="tab-CCB" role="tab" data-toggle="tab"><h1> CCB </h1></a></li>
+              <li role="presentation" class><a href="#tab-CCE" aria-controls="tab-CCE" role="tab" data-toggle="tab"><h1>CCE</h1></a></li>
+              <li role="presentation" class><a href="#tab-CCH" aria-controls="tab-CCH" role="tab" data-toggle="tab"><h1>CCH</h1></a></li>
+            
+          
+        </ul>
+      </div>
+    </div>
+    <!-- TABS centros -->
+    <div class="tab-content" id="tabsCentro">
+      <!-- CCA -->
+      <div class="tab-pane fade in active" role="tabpanel" id="tab-CCA" aria-labelledby="tab-CCA">
+        <!-- TABS buttons para cada centro -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+          <li role="presentation" class="active"><a href="#jogosVivoCCA" aria-controls="jogosVivoCCA" role="tab" data-toggle="tab"><h3>Jogos ao vivo</h3></a></li>
+          <li role="presentation" class><a href="#tabelaCCA" aria-controls="tabelaCCA" role="tab" data-toggle="tab"><h3>Tabela de Jogos</h3></a></li>
+          <li role="presentation" class><a href="#classificacaoCCA" aria-controls="classificacaoCCA" role="tab" data-toggle="tab"><h3>Classificação</h3></a></li>
+          <li role="presentation" class><a href="#artilhariaCCA" aria-controls="artilhariaCCA" role="tab" data-toggle="tab"><h3>Artilharia e Cartões</h3></a></li>
+        </ul>
+        
+        <!-- TABS -->
+        <div class="tab-content" id="tabsCampeonatoCCA">
+          
+          <!-- Tab para os jogos ao vivo -->
+          <div class="tab-pane fade in active" role="tabpanel" id="jogosVivoCCA" aria-labelledby="jogosVivoCCA">
+            <div class="panel panel-default">
+              <!-- <div class="panel-heading">Jogos ao vivo</div> -->
+              <div class="panel-body">
+                {{#each matchesLiveCCA}}
+                  {{> matchFirstRound}}
+                {{/each}}
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tab para a tabela -->
+          <div class="tab-pane fade" role="tabpanel" id="tabelaCCA" aria-labelledby="tabelaCCA">
+              <div class="panel panel-default">
+              <!--<div class="panel-heading">Tabela</div> -->
+                <div class="panel-body">
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 7 - 01/06</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCARodada7}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 6 - 31/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCARodada6}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 5 - 30/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCARodada5}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 4 - 29/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCARodada4}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 3 - 28/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCARodada3}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 2 - 22/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCARodada2}}
+                          {{> matchTable}}
+                        {{/each}}
+                      </div>
+                  </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 1 - 13/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCARodada1}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+          
+                </div>
+              </div>
+          </div>
+          
+          <!-- Tab para a classificacao -->
+          <div class="tab-pane fade" role="tabpanel" id="classificacaoCCA" aria-labelledby="classificacaoCCA">
+                <div class="panel panel-default">
+                  <!--<div class="panel-heading">Classificação</div> -->
+                      <div class="panel-body">
+                        
+                        <div class="panel panel-default">
+                          <!--<div class="panel-heading text-center">CCA</div> -->
+                            
+                            <!-- CHAVE A -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave A</h1>
+                              <table name="tabelaCCA-chaveA" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCAchaveA}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE A -->
+                            
+                            <!-- CHAVE B -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave B</h1>
+                              <table name="tabelaCCA-chaveB" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCAchaveB}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE B -->
+                            
+                            <!-- CHAVE C -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave C</h1>
+                              <table name="tabelaCCA-chaveC" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCAchaveC}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE C -->
+                            
+                        </div>
+                        
+                       
+                    
+                  </div>
+                </div>
+          </div>
+          
+          <!-- Tab para a artilharia -->
+          <div class="tab-pane fade" role="tabpanel" id="artilhariaCCA" aria-labelledby="artilhariaCCA">
+            <div class="panel panel-default">
+                          <!-- <div class="panel-heading text-center">Artilharia - CCA</div>  -->
+                            
+                            <!-- Artilharia -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Artilharia</h1>
+                              <table name="tabelaCCA-artilharia" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Nome</th>
+                                    <th>Equipe</th> 
+                                    <th>Gols</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each playersCCAgoals}}
+                                    {{> lineTableGoals}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+            </div>
+            
+            <div class="panel panel-default">
+                          <!-- <div class="panel-heading text-center">Artilharia - CCA</div>  -->
+                            
+                            <!-- Cartões -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Cartões</h1>
+                              <table name="tabelaCCA-cartoes" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Nome</th>
+                                    <th>Equipe</th> 
+                                    <th>Cartões Amarelos</th>
+                                    <th>Cartões Vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                  {{#each playersCCAcards}}
+                                    {{> lineTableCards}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+            </div>
+            
+          </div>
+        
+        <!-- Tab final -->
+        </div>
+      </div>
+      
+      <!-- CCB -->
+      <div class="tab-pane fade" role="tabpanel" id="tab-CCB" aria-labelledby="tab-CCB">
+        
+        <!-- TABS buttons para cada centro -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+          <li role="presentation" class="active"><a href="#jogosVivoCCB" aria-controls="jogosVivoCCB" role="tab" data-toggle="tab"><h3>Jogos ao vivo</h3></a></li>
+          <li role="presentation" class><a href="#tabelaCCB" aria-controls="tabelaCCB" role="tab" data-toggle="tab"><h3>Tabela de Jogos</h3></a></li>
+          <li role="presentation" class><a href="#classificacaoCCB" aria-controls="classificacaoCCB" role="tab" data-toggle="tab"><h3>Classificação</h3></a></li>
+          <li role="presentation" class><a href="#artilhariaCCB" aria-controls="artilhariaCCB" role="tab" data-toggle="tab"><h3>Artilharia</h3></a></li>
+        </ul>
+        
+        <!-- TABS -->
+        <div class="tab-content" id="tabsCampeonatoCCB">
+          
+          <!-- Tab para os jogos ao vivo -->
+          <div class="tab-pane fade in active" role="tabpanel" id="jogosVivoCCB" aria-labelledby="jogosVivoCCB">
+            <div class="panel panel-default">
+              <!--<div class="panel-heading">Jogos ao vivo</div> -->
+              <div class="panel-body">
+                {{#each matchesLiveCCB}}
+                  {{> matchFirstRound}}
+                {{/each}}
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tab para a tabela -->
+          <div class="tab-pane fade" role="tabpanel" id="tabelaCCB" aria-labelledby="tabelaCCB">
+              <div class="panel panel-default">
+              <!--<div class="panel-heading">Tabela</div> -->
+                <div class="panel-body">
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 7 - 01/06</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCBRodada7}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 6 - 31/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCBRodada6}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 5 - 30/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCBRodada5}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 4 - 29/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCBRodada4}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 3 - 28/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCBRodada3}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 2 - 22/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCBRodada2}}
+                          {{> matchTable}}
+                        {{/each}}
+                      </div>
+                  </div>
+          
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 1 - 13/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCBRodada1}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+          
+                </div>
+              </div>
+          </div>
+          
+          <!-- Tab para a classificacao -->
+          <div class="tab-pane fade" role="tabpanel" id="classificacaoCCB" aria-labelledby="classificacaoCCB">
+                <div class="panel panel-default">
+                  <!--<div class="panel-heading">Classificação</div> -->
+                      <div class="panel-body">
+                        
+                        <div class="panel panel-default">
+                          <!--<div class="panel-heading text-center">CCB</div> -->
+                            
+                            <!-- CHAVE A -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave A</h1>
+                              <table name="tabelaCCB-chaveA" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCBchaveA}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE A -->
+                            
+                            
+                        </div>
+                        
+                        
+                  </div>
+                </div>
+          </div>
+          
+          <!-- Tab para a artilharia -->
+          <div class="tab-pane fade" role="tabpanel" id="artilhariaCCB" aria-labelledby="artilhariaCCB">
+            <div class="panel panel-default">
+                          <!-- <div class="panel-heading text-center">Artilharia - CCA</div>  -->
+                            
+                            <!-- Artilharia -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Artilharia</h1>
+                              <table name="tabelaCCB-artilharia" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Nome</th>
+                                    <th>Equipe</th> 
+                                    <th>Gols</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each playersCCBgoals}}
+                                    {{> lineTableGoals}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+            </div>
+            
+            <div class="panel panel-default">
+                          <!-- <div class="panel-heading text-center">Artilharia - CCA</div>  -->
+                            
+                            <!-- Cartões -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Cartões</h1>
+                              <table name="tabelaCCB-cartoes" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Nome</th>
+                                    <th>Equipe</th> 
+                                    <th>Cartões Amarelos</th>
+                                    <th>Cartões Vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                  {{#each playersCCBcards}}
+                                    {{> lineTableCards}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+            </div>
+          </div>
+        
+        <!-- Tab final -->
+        </div>
+        
+      </div>
+      <!-- CCE -->
+      <div class="tab-pane fade" role="tabpanel" id="tab-CCE" aria-labelledby="tab-CCE">
+          <!-- TABS buttons para cada centro -->
+          <ul class="nav nav-pills nav-justified" role="tablist">
+            <li role="presentation" class="active"><a href="#jogosVivoCCE" aria-controls="jogosVivoCCE" role="tab" data-toggle="tab"><h3>Jogos ao vivo</h3></a></li>
+            <li role="presentation" class><a href="#tabelaCCE" aria-controls="tabelaCCE" role="tab" data-toggle="tab"><h3>Tabela de Jogos</h3></a></li>
+            <li role="presentation" class><a href="#classificacaoCCE" aria-controls="classificacaoCCE" role="tab" data-toggle="tab"><h3>Classificação</h3></a></li>
+            <li role="presentation" class><a href="#artilhariaCCE" aria-controls="artilhariaCCE" role="tab" data-toggle="tab"><h3>Artilharia</h3></a></li>
+          </ul>
+        
+        <!-- TABS -->
+        <div class="tab-content" id="tabsCampeonatoCCE">
+          
+          <!-- Tab para os jogos ao vivo -->
+          <div class="tab-pane fade in active" role="tabpanel" id="jogosVivoCCE" aria-labelledby="jogosVivoCCE">
+            <div class="panel panel-default">
+              <!--<div class="panel-heading">Jogos ao vivo</div> -->
+              <div class="panel-body">
+                {{#each matchesLiveCCE}}
+                  {{> matchFirstRound}}
+                {{/each}}
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tab para a tabela -->
+          <div class="tab-pane fade" role="tabpanel" id="tabelaCCE" aria-labelledby="tabelaCCE">
+              <div class="panel panel-default">
+              <!--<div class="panel-heading">Tabela</div> -->
+                <div class="panel-body">
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 7 - 01/06</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCERodada7}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 6 - 31/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCERodada6}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 5 - 30/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCERodada5}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 4 - 29/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCERodada4}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 3 - 28/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCERodada3}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 2 - 22/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCERodada2}}
+                          {{> matchTable}}
+                        {{/each}}
+                      </div>
+                  </div>
+                  
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 1 - 13/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCERodada1}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+          
+                </div>
+              </div>
+          </div>
+          
+          <!-- Tab para a classificacao -->
+          <div class="tab-pane fade" role="tabpanel" id="classificacaoCCE" aria-labelledby="classificacaoCCE">
+                <div class="panel panel-default">
+                  <!--<div class="panel-heading">Classificação</div> -->
+                      <div class="panel-body">
+                        
+                        <div class="panel panel-default">
+                          <!--<div class="panel-heading text-center">CCE</div> -->
+                            
+                            <!-- CHAVE A -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave A</h1>
+                              <table name="tabelaCCE-chaveA" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCEchaveA}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE A -->
+                            
+                            <!-- CHAVE B -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave B</h1>
+                              <table name="tabelaCCE-chaveB" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCEchaveB}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE B -->
+                            
+                            <!-- CHAVE C -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave C</h1>
+                              <table name="tabelaCCE-chaveC" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCEchaveC}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE C -->
+                            
+                            <!-- CHAVE D -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave D</h1>
+                              <table name="tabelaCCE-chaveD" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCEchaveD}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE D -->
+                        </div>
+                        
+                       
+                    
+                  </div>
+                </div>
+          </div>
+          
+          <!-- Tab para a artilharia -->
+          <div class="tab-pane fade" role="tabpanel" id="artilhariaCCE" aria-labelledby="artilhariaCCE">
+            <div class="panel panel-default">
+                          <!-- <div class="panel-heading text-center">Artilharia - CCA</div>  -->
+                            
+                            <!-- Artilharia -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Artilharia</h1>
+                              <table name="tabelaCCE-artilharia" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Nome</th>
+                                    <th>Equipe</th> 
+                                    <th>Gols</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each playersCCEgoals}}
+                                    {{> lineTableGoals}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+            </div>
+            
+            <div class="panel panel-default">
+                          <!-- <div class="panel-heading text-center">Artilharia - CCA</div>  -->
+                            
+                            <!-- Cartões -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Cartões</h1>
+                              <table name="tabelaCCE-cartoes" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Nome</th>
+                                    <th>Equipe</th> 
+                                    <th>Cartões Amarelos</th>
+                                    <th>Cartões Vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                  {{#each playersCCEcards}}
+                                    {{> lineTableCards}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+            </div>
+          </div>
+        
+        <!-- Tab final -->
+        </div>
+        
+      </div>
+      <!-- CCH -->
+      <div class="tab-pane fade" role="tabpanel" id="tab-CCH" aria-labelledby="tab-CCH">
+        
+        <!-- TABS buttons para cada centro -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+          <li role="presentation" class="active"><a href="#jogosVivoCCH" aria-controls="jogosVivoCCH" role="tab" data-toggle="tab"><h3>Jogos ao vivo</h3></a></li>
+          <li role="presentation" class><a href="#tabelaCCH" aria-controls="tabelaCCH" role="tab" data-toggle="tab"><h3>Tabela de Jogos</h3></a></li>
+          <li role="presentation" class><a href="#classificacaoCCH" aria-controls="classificacaoCCH" role="tab" data-toggle="tab"><h3>Classificação</h3></a></li>
+          <li role="presentation" class><a href="#artilhariaCCH" aria-controls="artilhariaCCH" role="tab" data-toggle="tab"><h3>Artilharia</h3></a></li>
+        </ul>
+        
+        <!-- TABS -->
+        <div class="tab-content" id="tabsCampeonatoCCH">
+          
+          <!-- Tab para os jogos ao vivo -->
+          <div class="tab-pane fade in active" role="tabpanel" id="jogosVivoCCH" aria-labelledby="jogosVivoCCH">
+            <div class="panel panel-default">
+              <!--<div class="panel-heading">Jogos ao vivo</div> -->
+              <div class="panel-body">
+                {{#each matchesLiveCCH}}
+                  {{> matchFirstRound}}
+                {{/each}}
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tab para a tabela -->
+          <div class="tab-pane fade" role="tabpanel" id="tabelaCCH" aria-labelledby="tabelaCCH">
+              <div class="panel panel-default">
+              <!--<div class="panel-heading">Tabela</div> -->
+                <div class="panel-body">
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 7 - 01/06</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCHRodada7}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 6 - 31/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCHRodada6}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 5 - 30/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCHRodada5}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 4 - 29/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCHRodada4}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 3 - 28/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCHRodada3}}
+                          {{> matchTable}}
+                        {{/each}} 
+                      </div>
+                  </div>
+                
+                  
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 2 - 22/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCHRodada2}}
+                          {{> matchTable}}
+                        {{/each}}
+                      </div>
+                  </div>
+          
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">Rodada 1 - 13/05</div>
+                      <div class="panel-body">
+                        {{#each matchesInTableCCHRodada1}}
+                          {{> matchTable}}
+                        {{/each}}
+                      </div>
+                  </div>
+          
+                </div>
+              </div>
+          </div>
+          
+          <!-- Tab para a classificacao -->
+          <div class="tab-pane fade" role="tabpanel" id="classificacaoCCH" aria-labelledby="classificacaoCCH">
+                <div class="panel panel-default">
+                  <!--<div class="panel-heading">Classificação</div> -->
+                      <div class="panel-body">
+                        
+                        <div class="panel panel-default">
+                          <!--<div class="panel-heading text-center">CCH</div> -->
+                            
+                            <!-- CHAVE A -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave A</h1>
+                              <table name="tabelaCCH-chaveA" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCHchaveA}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE A -->
+                            
+                            <!-- CHAVE B -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave B</h1>
+                              <table name="tabelaCCH-chaveB" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCHchaveB}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE B -->
+                            
+                            <!-- CHAVE C -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Chave C</h1>
+                              <table name="tabelaCCH-chaveC" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Equipe</th> 
+                                    <th>Jogos</th>
+                                    <th>Pontos ganhos</th>
+                                    <th>Vitórias</th>
+                                    <th>Empates</th>
+                                    <th>Derrotas</th>
+                                    <th>Gols marcados </th>
+                                    <th>Gols contra </th>
+                                    <th>Saldo de gols</th>
+                                    <th>Cartões amarelos</th>
+                                    <th>Cartões vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each teamsCCHchaveC}}
+                                    {{> lineTableClassification}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+                            <!-- CHAVE C -->
+                            
+                        </div>
+                        
+                       
+                    
+                  </div>
+                </div>
+          </div>
+          
+          <!-- Tab para a artilharia -->
+          <div class="tab-pane fade" role="tabpanel" id="artilhariaCCH" aria-labelledby="artilhariaCCH">
+            <div class="panel panel-default">
+                          <!-- <div class="panel-heading text-center">Artilharia - CCA</div>  -->
+                            
+                            <!-- Artilharia -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Artilharia</h1>
+                              <table name="tabelaCCH-artilharia" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Nome</th>
+                                    <th>Equipe</th> 
+                                    <th>Gols</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                   {{#each playersCCHgoals}}
+                                    {{> lineTableGoals}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+            </div>
+            
+            <div class="panel panel-default">
+                          <!-- <div class="panel-heading text-center">Artilharia - CCA</div>  -->
+                            
+                            <!-- Cartões -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                              <h1>Cartões</h1>
+                              <table name="tabelaCCH-cartoes" class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th>Nome</th>
+                                    <th>Equipe</th> 
+                                    <th>Cartões Amarelos</th>
+                                    <th>Cartões Vermelhos</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                 
+                                  {{#each playersCCHcards}}
+                                    {{> lineTableCards}}
+                                  {{/each}}
+                                   
+                                </tbody>
+                              </table>
+                              </div>
+                            </div>
+            </div>
+          </div>
+        
+        <!-- Tab final -->
+        </div>
+      
+    </div>
+    
+    <!-- Tabs CENTROS END -->
+  </div>
+  
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <!-- Carousel inferior -->
+      <div id="carousel-example-genericFooter" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-genericFooter" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-genericFooter" data-slide-to="1"></li>
+          <li data-target="#carousel-example-genericFooter" data-slide-to="2"></li>
+        </ol>
+  
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="bannerRodape.png" width="100%" height="100%"  class="img-responsive center-block" alt="First slide">
+            <div class="carousel-caption">
+              <!--<h2>Heading</h2> -->
+            </div>
+          </div>
+          <div class="item">
+            <img src="bannerRodape2.png" width="100%" height="100%" class="img-responsive center-block" alt="Second slide">
+            <div class="carousel-caption">
+              <!-- <h2>Heading</h2> -->
+            </div>
+          </div>
+          <div class="item">
+            <img src="bannerRodape.png" width="100%" height="100%" class="img-responsive center-block" alt="First slide">
+            <div class="carousel-caption">
+              <!-- <h2>Heading</h2> -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-genericFooter" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-genericFooter" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+      <!-- Carousel inferior END -->
+  </div>
+</nav>
+
+  
+    
+  <!-- container END -->      
+</div>  
+    
+    
+
+  
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-99311628-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+  
+</body>
+
