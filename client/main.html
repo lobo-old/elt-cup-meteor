@@ -1,0 +1,324 @@
+<head>
+  <title>VI Copa Elétrica de Futsal</title>
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <div class="jumbotron text-center">
+      <h1>VI Copa Elétrica de Futsal</h1>
+      <p>
+        <div class="row">
+          <div class="col-md-12 ">
+            <img src="caelt.png" width="200" height="200" class="img-responsive center-block" alt="CAELT">  
+          </div>
+        </div>
+        
+      </p>
+      
+    </div>
+    <!--
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Jogos ao vivo</a></li>
+      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Tabela</a></li>
+      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Classificação</a></li>
+      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Artilharia</a></li>
+    </ul>
+    -->
+    <div class="panel panel-default">
+      <div class="panel-heading">Resultados</div>
+          <div class="panel-body">
+			   
+        <div class="row">
+          
+          
+          <div class="col-xs-6 text-center">
+            <div class="panel panel-primary">
+            <div class="panel-heading"> Campeão </div>
+              <div class="panel-body">
+              
+                <div class="row">
+                   <div class="col-md-12 text-center">
+                      <img src="crack.png" width="150" height="150" class="img-responsive center-block" alt="Cracolândia de Lyohms">
+                    </div>
+                </div>
+                <div class="row">
+                  <h1>Cracolândia de Lyohms</h1>  
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        
+            
+          
+          
+          <div class="col-xs-6 text-center">
+            <div class="panel panel-primary">
+            <div class="panel-heading">2&ordm; Lugar</div>
+              <div class="panel-body">
+              
+                <div class="row">
+                  <img src="celtics.png" width="150" height="150" class="img-responsive center-block" alt="cELTics">
+                </div>
+                <div class="row">
+                  <h1>cELTics</h1>
+                </div>
+              
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>  
+        
+        
+        <div class="row">
+          <div class="col-xs-6 text-center">
+            <div class="panel panel-primary">
+            <div class="panel-heading">3&ordm; Lugar</div>
+              <div class="panel-body">
+              
+              
+                  <div class="row">
+                     <div class="col-md-12 text-center">
+                        <img src="shoke04.png" width="150" height="150" class="img-responsive center-block" alt="Shoke 04">
+                      </div>
+                  </div>
+                  <div class="row">
+                    <h1>Shoke 04</h1>  
+                  </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="col-xs-6 text-center">
+            <div class="panel panel-primary">
+            <div class="panel-heading">4&ordm; Lugar</div>
+              <div class="panel-body">
+            
+            
+                <div class="row">
+                  <img src="pizziolo.png" width="150" height="150" class="img-responsive center-block" alt="Pizziolo Saint Germain">
+                </div>
+                <div class="row">
+                  <h1>Pizziolo Saint Germain</h1>
+                </div>
+            
+              </div>
+            </div>
+            
+          </div>
+        
+        
+         <div class="row">
+              <div class="col-md-12 text-center">
+                  <h1>Artilheiro: Lucas Jonys(15 Gols)</h1>
+              </div>
+        </div>
+        
+      </div>
+    
+    </div>
+  </div>
+    
+   
+    <div class="panel panel-default">
+      <div class="panel-heading">2&ordf; Fase</div>
+          <div class="panel-body">
+    {{#each matchesFinals}}      
+    <div class="panel panel-primary">
+      <div class="panel-heading">Jogo {{_id}} - {{tipo}}</div>
+      <div class="panel-body">
+        <div class="row">
+              <div class="col-md-12">Horário: {{horario}}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 text-center">Arbitro 1: {{arbitro1}} </div>
+          <div class="col-xs-6 text-center">Arbitro 2: {{arbitro2}} </div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        
+        <div class="row">
+          <div class="col-xs-4 text-center">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <img src="{{urlEscudoA}}" width="150" height="150" class="img-responsive center-block" alt="{{timeA}}">
+                </div>
+            </div>
+            <div class="row">
+              <h1>{{timeA}}</h1>  
+            </div>
+            <div class="row">
+              <span class="text-muted">{{jogadoresGolsA}}</span>
+            </div>
+            
+          </div>
+          <div class="col-xs-4 text-center">
+             <h1>{{golsA}} X {{golsB}}</h1>
+              <span class="text-muted">({{golsPenaltiA}} X {{golsPenaltiB}})</span>
+          </div>
+          <div class="col-xs-4">
+            <div class="row">
+              <img src="{{urlEscudoB}}" width="150" height="150" class="img-responsive" alt="{{timeB}}">
+            </div>
+            <div class="row">
+              <h1>{{timeB}}</h1>
+            </div>
+            <div class="row">
+              <span class="text-muted">{{jogadoresGolsB}}</span>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    {{/each}}   
+          
+          </div>
+    </div>
+    
+    
+    
+
+
+          
+
+<div class="panel panel-default">
+  <div class="panel-heading">1&ordf; Fase</div>
+      <div class="panel-body">
+        
+      
+    
+    <div class="table-responsive">
+            <h1>Grupo A</h1>
+            <table name="tabela-grupoA" class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Equipe</th> 
+                  <th>Pontos ganhos</th>
+                  <th>Saldo de gols</th>
+                  <th>Gols marcados </th>
+                  <th>Cartões amarelos</th>
+                  <th>Cartões vermelhos</th>
+                </tr>
+              </thead>
+              <tbody>
+               
+             
+              {{#each teamsA}}
+              <tr>
+                  <td><img src="{{#if urlEscudo}} {{urlEscudo}} {{else}}  {{/if}}" width="50" height="50" class="img-responsive" alt=""></td>
+                  <td> {{equipe}}</td> 
+                  <td>{{pontosG}}</td>
+                  <td>{{saldoG}}</td>
+                  <td>{{golsM}}</td>
+                  <td>{{cartoesA}}</td>
+                  <td>{{cartoesV}}</td>
+              </tr>
+              {{/each}}
+                 
+              </tbody>
+            </table>
+            
+    </div>
+    
+    <div class="table-responsive">
+            <h1>Grupo B</h1>
+            <table name="tabela-grupoB" class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Equipe</th> 
+                  <th>Pontos ganhos</th>
+                  <th>Saldo de gols</th>
+                  <th>Gols marcados </th>
+                  <th>Cartões amarelos</th>
+                  <th>Cartões vermelhos</th>
+                </tr>
+              </thead>
+              <tbody>
+               
+             
+              {{#each teamsB}}
+              <tr>
+                  <td><img src="{{#if urlEscudo}} {{urlEscudo}} {{else}}  {{/if}}" width="50" height="50" class="img-responsive" alt=""></td>
+                  <td> {{equipe}}</td> 
+                  <td>{{pontosG}}</td>
+                  <td>{{saldoG}}</td>
+                  <td>{{golsM}}</td>
+                  <td>{{cartoesA}}</td>
+                  <td>{{cartoesV}}</td>
+              </tr>
+              {{/each}}
+                 
+              </tbody>
+            </table>
+            
+    </div>
+    
+    
+    {{#each matches}}
+    <div class="panel panel-primary">
+      <div class="panel-heading">Jogo {{_id}} - Grupo {{grupo}}</div>
+      <div class="panel-body">
+        <div class="row">
+              <div class="col-md-12">Horário: {{horario}}</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 text-center">Arbitro 1: {{arbitro1}} </div>
+          <div class="col-xs-6 text-center">Arbitro 2: {{arbitro2}} </div>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        
+        <div class="row">
+          <div class="col-xs-4 text-center">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <img src="{{urlEscudoA}}" width="150" height="150" class="img-responsive center-block" alt="{{timeA}}">
+                </div>
+            </div>
+            <div class="row">
+              <h1>{{timeA}}</h1>  
+            </div>
+            <div class="row">
+              <span class="text-muted">{{jogadoresGolsA}}</span>
+            </div>
+            
+          </div>
+          <div class="col-xs-4 text-center">
+             <h1>{{golsA}} X {{golsB}}</h1>
+          </div>
+          <div class="col-xs-4">
+            <div class="row">
+              <img src="{{urlEscudoB}}" width="150" height="150" class="img-responsive" alt="{{timeB}}">
+            </div>
+            <div class="row">
+              <h1>{{timeB}}</h1>
+            </div>
+            <div class="row">
+              <span class="text-muted">{{jogadoresGolsB}}</span>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    {{/each}}
+  
+  </div>
+</div>
+
+  </div>
+</body>
